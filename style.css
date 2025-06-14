@@ -18,7 +18,8 @@ body{
     background-image: url(./assets/images/background-pattern-mobile.svg);
     background-repeat: no-repeat;
     background-position: top;
-    background-size: auto;
+    background-size: 100%;
+    background-attachment: fixed;
     aspect-ratio: auto;
     color: var(--purple-950);
     display: flex;
