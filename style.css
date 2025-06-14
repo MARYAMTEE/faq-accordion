@@ -3,6 +3,7 @@
     --purple-100: hsl(275, 100%, 97%);
     --purple-600: hsl(292, 16%, 49%);
     --purple-950: hsl(292, 42%, 14%);
+    --purple: hsl(281, 83%, 54%);
 }
 
 *{
@@ -24,12 +25,19 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Star Icon */
+.star-icon{
+    width: 1.7rem;
 }
 
 /* The container that holds all the FAQs */
 .container-faq{
     width: 20rem;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: var(--purple-100);
     border-radius: 15px;
 }
@@ -37,6 +45,7 @@ body{
 /* Header */
 .faq-header{
     display: flex;
+    gap: 1.5rem;
 }
 
 .faq-item{
@@ -48,6 +57,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1.5rem 0;
 }
 .text-icon h2{
     font-size: 1rem;
@@ -58,10 +68,32 @@ body{
 
  .text{
     display: none;
+    padding-bottom: 1.5rem;
     color: var(--purple-600);
+    font-size: 14px;
+    line-height: 1.5;
  }
 
  .text.toggle{
     display: block;
  }
 
+ /* Buttons */
+ button{
+    border: none;
+    cursor: pointer;
+    background-color: var(--purple);
+    color: var(--white);
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+ }
+
+ button.active{
+    background-color: var(--purple-950);
+ }
+
+ /* Plus icon */
+ .plus-icon{
+    font-size: 1rem;
+ }
