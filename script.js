@@ -15,14 +15,18 @@ faqItem.forEach((item, index) => {
     }
 
     button.addEventListener("click", () => {
-        buttons.forEach(btn => btn.classList.remove("active"));
-        button.classList.toggle("active");
+        const isOpen = text.classList.toggle("toggle");
 
-        text.classList.toggle("toggle");
+        // Toggle plus and minus icon
+        plusIcon.classList.toggle("fa-plus");
+        plusIcon.classList.toggle("fa-minus");
 
-    // Toggle plus and minus icon
-    plusIcon.classList.toggle("fa-plus");
-    plusIcon.classList.toggle("fa-minus");
+        // Toggle active state
+        if(isOpen) {
+            button.classList.add("active");
+        } else{
+            button.classList.remove("active");
+        }
     });
 
 });

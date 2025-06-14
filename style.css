@@ -38,8 +38,8 @@ body{
 .container-faq{
     width: 20rem;
     padding: 1.5rem;
-    background-color: var(--purple-100);
-    border-radius: 15px;
+    background-color: var(--white);
+    border-radius: 0.75rem;
 }
 
 /* Header */
@@ -48,8 +48,8 @@ body{
     gap: 1.5rem;
 }
 
-.faq-item{
-    border-bottom: 1px solid var(--purple-600);
+.faq-item:not(:last-child){
+    border-bottom: 1px solid var(--purple-100);
 }
 
 /* Texts */
@@ -70,7 +70,7 @@ body{
     display: none;
     padding-bottom: 1.5rem;
     color: var(--purple-600);
-    font-size: 14px;
+    font-size: 0.88rem;
     line-height: 1.5;
  }
 
