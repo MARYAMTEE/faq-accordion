@@ -67,11 +67,15 @@ body{
     margin: 0;
 }
 
+.text-icon h2:hover{
+    color: var(--purple);
+}
+
  .text{
     display: none;
     padding-bottom: 1.5rem;
     color: var(--purple-600);
-    font-size: 0.88rem;
+    font-size: 0.90rem;
     font-weight: 500;
     line-height: 1.5;
  }
@@ -98,4 +102,35 @@ body{
  /* Plus icon */
  .plus-icon{
     font-size: 1rem;
+ }
+
+ @media (min-width: 43.75rem){
+    body{
+        background-image: url(./assets/images/background-pattern-desktop.svg);
+        height: 100vh;
+    }
+
+    /* Header text */
+    .faq-header h1{
+        font-size: 3.5rem;
+    }
+
+    .star-icon{
+        width: 2.2rem;
+    }
+
+    .container-faq{
+        width: 38rem;
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+
+    .text-icon h2{
+        max-width: 100%;
+    }
+
+     .text{
+        font-weight: normal;
+        font-size: 1rem;
+     }
  }
