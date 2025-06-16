@@ -41,6 +41,7 @@ body{
     padding: 1.5rem;
     background-color: var(--white);
     border-radius: 0.75rem;
+    box-shadow:  0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 
 /* Header */
@@ -104,33 +105,57 @@ body{
     font-size: 1rem;
  }
 
- @media (min-width: 43.75rem){
+ @media (min-width: 64rem){
     body{
         background-image: url(./assets/images/background-pattern-desktop.svg);
-        height: 100vh;
     }
 
     /* Header text */
     .faq-header h1{
-        font-size: 3.5rem;
+        font-size: 3.2rem;
     }
 
+    /* Star logo */
     .star-icon{
-        width: 2.2rem;
+        width: 2.5rem;
     }
 
     .container-faq{
-        width: 38rem;
-        padding: 2rem;
+        width: 39rem;
+        padding: 2.5rem;
         border-radius: 1rem;
     }
 
+    /* Text */
     .text-icon h2{
         max-width: 100%;
+        font-size: 1.1rem;
     }
 
      .text{
         font-weight: normal;
         font-size: 1rem;
      }
+ }
+
+ @media(min-width: 43.75rem) and (max-width: 63.94rem) {
+    .container-faq{
+        width: 37rem;
+        padding: 2.5rem;
+        border-radius: 1rem;
+    }
+
+    .text{
+        font-weight: normal;
+        font-size: 1rem;
+     }
+
+     .text-icon h2{
+        max-width: 100%;
+        font-size: 1.1rem;
+    }
+
+     .star-icon{
+        width: 2rem;
+    }
  }
